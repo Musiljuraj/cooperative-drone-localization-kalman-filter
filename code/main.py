@@ -1,5 +1,5 @@
 """
-Cooperative Localization of Two Drones Using a Kalman Filter
+Cooperative Localization of Two Drones Using a Kalman Filter 
 
 This file contains the complete numerical part of the project:
 1. model creation,
@@ -25,8 +25,8 @@ from matplotlib.animation import FuncAnimation
 # the generated process noise, GPS noise and relative measurement noise are
 # the same every time the program is run. This is useful for the project,
 # because the figures and RMSE values remain stable while writing the report.
-#RANDOM_SEED = 7
-RANDOM_SEED = None
+RANDOM_SEED = 7
+#RANDOM_SEED = None
 
 # Simulation parameters
 DT = 1.0                 # sampling period [s]
@@ -1146,7 +1146,7 @@ def main():
     # 5. compute errors and RMSE values,
     # 6. save figures for the article.
 
-    #np.random.seed(RANDOM_SEED)
+    np.random.seed(RANDOM_SEED)
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 
     print("Cooperative localization of two drones using a Kalman filter")
